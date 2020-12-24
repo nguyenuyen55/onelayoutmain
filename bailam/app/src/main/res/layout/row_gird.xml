@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="216dp"
+    app:cardCornerRadius="15dp"
+    android:layout_marginLeft="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="216dp"
+        >
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="90dp"
+            android:id="@+id/anh"
+            android:src="@drawable/sp1"/>
+        <LinearLayout
+            android:layout_below="@+id/anh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Tiêu đề"
+                android:textStyle="bold"
+                android:id="@+id/tieude"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chi tiết cụ thể"
+                android:id="@+id/cuthe"/>
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:textSize="10dp"
+            android:textColor="#FFC107"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_login"
+            android:layout_marginLeft="5dp"
+            android:text="Chi tiết"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+</LinearLayout>
